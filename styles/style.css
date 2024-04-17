@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico";
+    font-weight: 100;
+    font-style: normal;
+  }
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root{
+    --bg-color: rgba(242, 194, 153, 0.25);
+    --second-bg-color: rgba(242, 194, 153, 0.5 );
+    --tertiary-bg-color: rgba(189, 134, 86);
+    --white-color: #fff;
+    --title-color: rgba(7, 140, 102);
+    --main-color:rgb(2, 40, 89);
+    --text-font:'Josefin Sans', sans-serif;
+    --title-font:'Pacifico';
+}
+
+h1{
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 3.5rem; 
+}
+
+h2{
+    font-family: var(--title-font);
+    color: var(--main-color);
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+}
+
+h3{
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-family: var(--title-font);
+    text-transform: capitalize;
+}
+
+
+p{
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+a{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 1.8rem;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    }
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    
+    min-height: 100vh;
+    padding: 5rem 10% 2rem;
+}
+/* **************** */
+
+.imageBgHome {
+    width: 100vw;
+    height: 50vh;
+    background: url(../images/Lille.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+/***************** design sidebadr ****************/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background: var(--tertiary-bg-color);
+    backdrop-filter: blur(40px);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    padding: 6px 14px;
+    transition: .5s;
+}
+
+.sideBar.active{
+    width: 280px;
+}
+
+.sidebar .logoMenu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.sidebar .logoMenu .logo{
+    font-size: 2.2rem;
+    margin: 0 1rem;
+    color: var(--white-color);
+    pointer-events: none;
+    opacity: 0;
+    transition: .3s;
+}
+
+.sidebar.active .logoMenu .logo{
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.sideBar .logoMenu .toggleBtn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 3.6rem;
+    color: var(--white-color);
+    text-align: center;
+    line-height: 3.6rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.sideBar.active .logoMenu .toggleBtn{
+    left: 90%;
+}
+
+.sideBar .list{
+    margin-top: 10px;
+}
+
+.list .listItem{
+    width: 100%;
+    height: 50px;
+    margin: 0.4rem 0;
+    line-height: .2rem;
+    border-radius: 6px;
+    list-style: none;
+}
+
+.list .listItem a{
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: .5s ;
+}
+
+.list .listItem.active a,
+.list .listItem a:hover{
+    background: rgba(255, 255, 255, .2); 
+}
+
+.list .listItem a i{
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sidebar .linkName{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.sideBar.active .linkName{
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: calc(.1s * var(--i));
+}
+/***************** header ****************/
+
+header{
+    /* position: fixed; */
+    /* top: 50%;
+    left: 0; */
+    width: 100%;
+    padding: 1.5rem 9%;
+    background: var(--tertiary-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white-color);
+    cursor: default;
+    display: flex;
+    gap: 1rem;
+}
+
+.imageLogo{
+    width: 4rem;
+    height: 4rem;
+    
+}
+
+.imageLogo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--white-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--white-color);
+    display: none;
+}
+
+/*******************design section home page****************/
+
+.home{
+    background: url(../images/background/hibiscus.svg)  102% -5%;
+    mix-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: 20rem;
+}
+
+.home h2{
+    margin-bottom: 2rem;
+}
+.homeImg{
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+
+.homeImg div{
+    width:30% ;
+
+}
+
+.homeImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+/****************design section letter  *************************/
+
+.letter{   
+    background: url(../images/background/logoClair.jpg) center,
+    url(../images/background/frangipanier.svg) 80% 100% , 
+    var(--white-color);
+    background-repeat: no-repeat;
+}
+
+.letterContent p{
+    max-width: 800px;
+    text-align: center;
+    margin: 2rem auto;    
+    line-height: 2;
+}
+
+/* **************design section membres***************** */
+.membres{
+    background: url(../images/background/backgroundFeuillage.png) center;
+    background-size: cover;
+}   
+
+.membreContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.membreContent{
+    
+    border: red 1px solid;      
+}
+
+
+.membreBox{
+    display: flex;  
+    
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.membreImg{
+    width: 20rem;
+    height: 20rem;
+}
+.membreImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.membreInfos{
+    color: var(--main-color);
+    margin: auto 0;
+}
+
+.membreInfos h3{
+    white-space: nowrap;
+}
+/********************Breakpoints****************/
+@media screen and (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+    .imageBgHome{
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;    
+    } 
+
+    .header{
+        padding: 2rem 3%;
+    }
+    
+    .imageBgHome{
+        height: 30%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    
+
+    /* .footer {
+        padding: 2rem 3%;
+    } */
+}
+
+@media screen and (max-width: 767px){
+   
+    
+
+}
+@media screen and (max-width: 640px){
+   
+    
+
+}
+
+@media screen and (max-width: 617px){
+   
+}
+
+@media screen and (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    /* .contact form .input-box input{
+        width: 100%;
+    } */
+}
+
+@media screen and (max-width: 450px){
+
+    /* .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    } */
+}
