@@ -97,7 +97,7 @@ section{
     background-repeat: no-repeat;
 }
 /***************** design sidebadr ****************/
-
+/* 
 .sidebar {
     position: fixed;
     top: 0;
@@ -198,13 +198,13 @@ section{
     opacity: 1;
     pointer-events: auto;
     transition-delay: calc(.1s * var(--i));
-}
+} */
 /***************** header ****************/
 
 header{
-    /* position: fixed; */
-    /* top: 50%;
-    left: 0; */
+    position: fixed;
+    top: 0;
+    left: 0; 
     width: 100%;
     padding: 1.5rem 9%;
     background: var(--tertiary-bg-color);
@@ -352,6 +352,10 @@ header{
     html {
         font-size: 55%;
     }
+    .header{
+        padding: 2rem 3%;
+    }
+
     .imageBgHome{
         height: 40%;
     }
@@ -368,7 +372,7 @@ header{
         left: 0;
         width: 100%;
         padding: 1rem 3%;
-        background: var(--bg-color);
+        background: var(--tertiary-bg-color);
         border-top: 0.1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
@@ -384,10 +388,6 @@ header{
         margin: 3rem 0;    
     } 
 
-    .header{
-        padding: 2rem 3%;
-    }
-    
     .imageBgHome{
         height: 30%;
     }
@@ -403,7 +403,10 @@ header{
 }
 
 @media screen and (max-width: 767px){
-   
+    .navbar.active{
+        display: block;
+
+    }
     
 
 }
