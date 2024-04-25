@@ -1,10 +1,10 @@
-<html lang="en">
+<!DOCTYPE html>
+
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lille du Pacifique</title>
-
-    
+    <title>Lille du Pacifique</title> 
 
     <!-- Définition de l'image pour les aperçus sur les réseaux sociaux -->
     <meta property="og:image" content="images/backgroundAccueil.png">
@@ -43,62 +43,12 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
+
+
+
 </head>
 <body>
-    <!-- <nav class="sidebar">
-        <div class="logoMenu ">
-            <div class="imageLogo"><img src="images/logo.png" alt=""></div>
-            <h2 class="logo">Lille du Pacifique</h2>
-            <i class='bx bx-menu toggleBtn'></i>
-        </div>
-
-        <ul class="list">
-            <li class="listItem active">
-                <a href="#home">
-                    <i class='bx bx-home'></i>
-                    <span class="linkName" style="--i:1;">Accueil</span>
-                </a>
-            </li>
-            <li class="listItem ">
-                <a href="#blog">
-                    <i class='bx bx-news'></i>
-                    <span class="linkName" style="--i:2;">Blog</span>
-                </a>
-            </li>
-            <li class="listItem">
-                <a href="#">
-                    <i class='bx bx-calendar'></i>
-                    <span class="linkName" style="--i:3;">Agenda</span>
-                </a>
-            </li>
-            <li class="listItem">
-                <a href="#">
-                    <i class='bx bxs-contact' ></i>
-                    <span class="linkName" style="--i:4;">Contact</span>
-                </a>
-            </li>
-            <li class="listItem">
-                <a href="#">
-                    <i class='bx bxs-user-detail'></i>
-                    <span class="linkName" style="--i:5:">Mon compte</span>
-                </a>
-            </li>
-            <li class="listItem">
-                <a href="#">
-                    <i class='bx bx-log-in'></i>
-                    <span class="linkName" style="--i:6;">Connexion</span>
-                </a>
-            </li>
-            <li class="listItem">
-                <a href="#">
-                    <i class='bx bx-log-out'></i>
-                    <span class="linkName" style="--i:7;">Déconnexion</span>
-                </a>
-            </li>
-
-        </ul>
-    </nav> -->
-    <header >
+       <header >
             <a href="index.html" class="logo">
                 <div class="imageLogo"><img src="images/logo.png" alt=""></div>
                 Lille Du Pacifique</a>
@@ -204,21 +154,162 @@
         </div>
     </section>
 
-    <!-- design section événements -->
+    <!-- design section blog -->
 
-    <section class="blog" id="blog">
-        <h1>Actualités</h1>
-        
+    <section class="actualite" id="actualite">
+        <h1 class="heading">Actualités</h1>
+        <div class="diapo" data-speed="3000" data-transition="1000">
+            <div class="elements">
+                <div class="element">
+                    <img src="images/blog/photo1.png" alt="Clavier">
+                    <div class="caption">
+                        <div class="captionTxt">
+                            <h3>Titre de l'article</h3>
+                            <p>Publié le <span>01/04/2024</span></p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                        </div>
+                        <a href="#" class="btn">La suite par ici</a>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="images/blog/photo2.png" alt="Dame">
+                    <div class="caption">
+                        <div class="captionTxt">
+                            <h3>Titre de l'article</h3>
+                            <p>Publié le <span>01/04/2024</span></p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                        </div>
+                        <a href="#" class="btn">La suite par ici</a>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="images/blog/photo3.png" alt="Paysage">
+                    <div class="caption">
+                        <div class="captionTxt">
+                            <h3>Titre de l'article</h3>
+                            <p>Publié le <span>01/04/2024</span></p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                        </div>
+                        <a href="#" class="btn">La suite par ici</a>
+                    </div>
+                </div>
+                <div class="element">
+                    <img src="images/blog/photo4.png" alt="Paysage">
+                    <div class="caption">
+                        <div class="captionTxt">
+                            <h3>Titre de l'article</h3>
+                            <p>Publié le <span>01/04/2024</span></p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, fuga!</p>
+                        </div>
+                        <a href="#" class="btn">La suite par ici</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Flèches -->
+            <i id="navGauche" class='bx bxs-chevron-left-circle' ></i>
+            <i id="navDroite" class='bx bxs-chevron-right-circle'></i>
+        </div>
 
     </section>
 
+    <!-- design section evenements -->
+
+    <section class="event" id="event">
+        <h1 class="heading">Événements à venir</h1>
+        <div class="eventContainer">
+            <div class="eventBox">
+                <div class="eventImg">
+                    <img src="images/agenda/bagatelle.jpg" alt="">
+                </div>
+                <div class="eventInfos">
+                    <h3>Titre de l'événement</h3>
+                    <p>01/04/2024</p> 
+                    <a href="#" class="btn">Participer</a>               
+                </div>
+            </div>
+            <div class="eventBox">
+                <div class="eventImg">
+                    <img src="images/agenda/bagatelle.jpg" alt="">
+                </div>
+                <div class="eventInfos">
+                    <h3>Titre de l'événement</h3>
+                    <p>01/04/2024</p> 
+                    <a href="#" class="btn">Participer</a>               
+                </div>
+            </div>
+            <div class="eventBox">
+                <div class="eventImg">
+                    <img src="images/agenda/bagatelle.jpg" alt="">
+                </div>
+                <div class="eventInfos">
+                    <h3>Titre de l'événement</h3>
+                    <p>01/04/2024</p> 
+                    <a href="#" class="btn">Participer</a>               
+                </div>
+            </div>
+            <div class="eventBox">
+                <div class="eventImg">
+                    <img src="images/agenda/bagatelle.jpg" alt="">
+                </div>
+                <div class="eventInfos">
+                    <h3>Titre de l'événement</h3>
+                    <p>01/04/2024</p> 
+                    <a href="#" class="btn">Participer</a>               
+                </div>
+            </div>
+            <div class="eventBox">
+                <div class="eventImg">
+                    <img src="images/agenda/bagatelle.jpg" alt="">
+                </div>
+                <div class="eventInfos">
+                    <h3>Titre de l'événement</h3>
+                    <p>01/04/2024</p> 
+                    <a href="#" class="btn">Participer</a>               
+                </div>
+            </div>
+            <div class="eventBox">
+                <div class="eventImg">
+                    <img src="images/agenda/bagatelle.jpg" alt="">
+                </div>
+                <div class="eventInfos">
+                    <h3>Titre de l'événement</h3>
+                    <p>01/04/2024</p> 
+                    <a href="#" class="btn">Participer</a>               
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+    
+
+    </section>
+
+    <!-- design section newsletter -->
+
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <h2>Inscrivez-vous à notre newletter</h2>
+            <p>Ne manquez aucune actualité de l’association “Lille du Pacifique” ! <br>
+                Inscrivez-vous à notre newsletter pour recevoir en exclusivité nos  dernières initiatives, événements passionnants et projets inspirants. <br>
+                Ensemble, créons des ponts entre Lille et le Pacifique !</p>
+                <form action="#">
+                    <div class="inputBox">
+                        <input type="text" name="nom" placeholder="Nom" maxlength="30" required>
+                        <input type="email" name="email" placeholder="Adresse mail"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" name="submit" class="btn">S'inscrire</button>
+                    </div>
+                </form>
+        </div>
+    </section>
 
     <!-- Scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- writting typed -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
-
+    
     <!-- Custom js -->
     <script src="js/script.js"></script>
 
