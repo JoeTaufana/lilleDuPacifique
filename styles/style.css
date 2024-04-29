@@ -83,7 +83,7 @@ body {
 }
 
 section{
-    padding: 5rem 10% 2rem;
+    padding: 8rem 10% 2rem;
 }
 
 .btn {
@@ -260,7 +260,8 @@ header{
 /********************design section blog ****************/
 .actualite{
     width: 80%;
-    margin: auto;    
+    margin: auto; 
+     
 }
 
 .actualite .diapo{
@@ -286,7 +287,7 @@ header{
 
 .caption{
     position: absolute;
-    bottom: 5%;
+    width: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -296,7 +297,7 @@ header{
     display: flex;
     align-items: last baseline;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .caption h3{
@@ -305,6 +306,11 @@ header{
 
 .caption p{
     margin-bottom: 1rem;
+}
+
+.caption a:hover{
+    transform: scale(100%);
+    box-shadow: none;
 }
 
 
@@ -385,6 +391,11 @@ header{
     margin:.3rem 0 1rem;
 }
 
+.eventInfos a:hover{
+    transform: scale(100%);
+    box-shadow: none;
+}
+
 /************ design inscription newletter  */
 .newsletter{
     min-height: auto;
@@ -443,7 +454,79 @@ header{
     cursor: pointer;
 }
 
+/*************** design section partenaires  */
+.partenairesSlider {
+    width: 100%;
+    
+}
 
+.partenairesContainer {
+    display: flex;
+    width: max-content; 
+    animation: scroll 30s linear infinite; 
+}
+
+.partenairesContainer img {
+    width: 30rem;
+    height: 15rem;
+    margin: 0 15rem; 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ********** design footer *****************/
+footer {
+    width: 100%;
+    padding: 1.5rem 9%;
+    background: var(--tertiary-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+footer .footerLink{
+    color: var(--white-color);
+    display: flex;
+    gap: 5rem;
+}
+
+footer .footerLink div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    color: var(--white-color);
+    border-radius: .8rem;
+    border: var(--white-color) 2px solid;
+    transition: .5 ease;
+}
+
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem var(--white-color);
+    background: var(--white-color);
+}
+
+.footer-iconTop a i{
+    font-size: 2.2rem;
+    color: var(--white-color);
+}
+
+.footer-iconTop a:hover i{
+    color: var(--tertiary-bg-color);
+}
 /********************Breakpoints****************/
 @media screen and (max-width: 1200px){
     html {
@@ -453,9 +536,7 @@ header{
         padding: 2rem 3%;
     }
 
-    .imageBgHome{
-        height: 40%;
-    }
+   
 }
 
 @media screen and (max-width: 991px){
@@ -486,8 +567,9 @@ header{
     } 
 
     .imageBgHome{
-        display: none;
+        height: 35vh;
     }
+
     section {
         padding: 10rem 3% 2rem;
     }
