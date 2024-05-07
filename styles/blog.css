@@ -1,0 +1,58 @@
+.blog {
+    text-align: center;
+    padding: 10rem 10% 5rem;
+    background: url(../images/background/hibiscus.png) 0rem 5rem , 
+                url(../images/background/frangipanier.png) 105% 105% ;
+    background-repeat: no-repeat;
+    background-size: 25rem;
+   
+    
+}
+
+/* .blog a:hover{
+    transform: scale(100%);
+    box-shadow: none;
+} */
+
+.blogContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 5rem;
+    margin-top: 8rem;
+}
+
+.blogContainer .blogBox {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: var(--white-color) !important;
+    border-radius: 5rem 0rem 5rem 0rem;
+    box-shadow: 1rem -1rem 1rem rgba(0, 0, 0, .2);
+}
+
+.blogBox img{
+    width: 100%; 
+}
+
+.blogBox .blogLayer{
+    width: 100%;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 4rem;
+}
+
+.blogLayer p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin:.3rem 0 1rem;
+}
+
+.blogLayer a{
+    color: var(--main-color);
+}
+

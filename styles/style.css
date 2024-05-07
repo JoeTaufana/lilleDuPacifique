@@ -84,6 +84,7 @@ body {
 
 section{
     padding: 8rem 10% 2rem;
+    min-height: 100svh;
 }
 
 .btn {
@@ -91,13 +92,18 @@ section{
     padding: 1rem 2.8rem;
     background: var(--title-color);
     border-radius: 2rem .2rem;
-    box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--white-color);
     letter-spacing: .1rem;
     white-space: nowrap;
     font-weight: 600;
     transition: 0.5 ease;
+}
+
+.btn:hover {
+    transform: scale(100%);
+    box-shadow: 0 0 2rem var(--title-color);
+    
 }
 /* **************** */
 
@@ -117,7 +123,7 @@ header{
     top: 0;
     left: 0; 
     width: 100%;
-    padding: 1.5rem 9%;
+    padding: 1.5rem 2%;
     background: var(--tertiary-bg-color);
     display: flex;
     justify-content: space-between;
@@ -173,10 +179,10 @@ header{
 /*******************design section home page****************/
 
 .home{
-    background: url(../images/background/hibiscus.svg)  102% -5%;
+    background: url(../images/background/hibiscus.svg)  2rem -5rem;
     mix-blend-mode: darken;
     background-repeat: no-repeat;
-    background-size: 20rem;
+    background-size: 25rem;
 }
 
 .home h1{
@@ -242,11 +248,13 @@ header{
 .membreImg{
     width: 20rem;
     height: 20rem;
+    margin-right: 3rem;
 }
 .membreImg img{
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 48rem 8rem;
+    box-shadow: 0.5rem -0.5rem 0.5rem rgba(0, 0, 0, .2);
 }
 .membreInfos{
     color: var(--main-color);
@@ -261,7 +269,9 @@ header{
 .actualite{
     width: 80%;
     margin: auto; 
-     
+    background: url(../images/background/frangipanier.png)  95% 15%;
+    background-repeat: no-repeat;
+    background-size: 20rem; 
 }
 
 .actualite .diapo{
@@ -290,10 +300,10 @@ header{
     width: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: white ;
     padding: 2rem 2rem;
     border-radius: 2.8rem 0rem ;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .6);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
     display: flex;
     align-items: last baseline;
     justify-content: space-between;
@@ -308,10 +318,10 @@ header{
     margin-bottom: 1rem;
 }
 
-.caption a:hover{
+/* .caption a:hover{
     transform: scale(100%);
     box-shadow: none;
-}
+} */
 
 
 #navGauche, #navDroite{
@@ -391,13 +401,9 @@ header{
     margin:.3rem 0 1rem;
 }
 
-.eventInfos a:hover{
-    transform: scale(100%);
-    box-shadow: none;
-}
-
 /************ design inscription newletter  */
 .newsletter{
+    padding: 2rem 10% 2rem;
     min-height: auto;
     background:var(--main-color);
 }
@@ -413,6 +419,7 @@ header{
 }
 
 .newsletter p{
+    padding: 2rem;
     color: var(--white-color);
 }
 
@@ -454,7 +461,15 @@ header{
     cursor: pointer;
 }
 
+.newsletter form .submit .btn:hover{
+    box-shadow: 0 0 2rem var(--white-color);
+}
+
 /*************** design section partenaires  */
+.partenaires {
+    padding: 2rem 10% 2rem;
+    min-height: auto;
+}
 .partenairesSlider {
     width: 100%;
     
